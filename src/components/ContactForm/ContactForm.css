@@ -1,54 +1,56 @@
-/* === CONTACT FORM === */
-.contact-section{
-    background: var(--light);
+.contact-section {
+  background: var(--light);
 }
 
-.form-group{
-    margin-bottom: 24px;
+.form-group {
+  margin-bottom: 24px;
 }
 
-.form-group label{
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: var(--primary);
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .form-group input,
 .form-group textarea,
-.form-select{
-    width: 100%;
-    padding: 14px 16px;
-    border: 2px solid #DDD;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-.form-group.invalid label {
-    color: #c53030;
-}
-
-.form-group.invalid input,
-.form-group.invalid textarea {
-    border-color: #c53030;
+.form-select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--text);
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
-.form-group .form-select:focus{
-    border-color: var(--primary);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(27, 79, 114, 0.2);
+.form-group .form-select:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(232, 207, 112, 0.25);
+}
+
+.form-group.invalid label {
+  color: #c53030;
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+  border-color: #c53030;
 }
 
 .form-error {
-    margin-top: 8px;
-    color: #c53030;
-    font-size: 0.9rem;
+  margin-top: 8px;
+  color: #c53030;
+  font-size: 0.9rem;
 }
 
 .form-success {
-    margin-top: 18px;
-    color: #1d6a20;
-    font-weight: 600;
+  margin-top: 18px;
+  color: #1d6a20;
+  font-weight: 600;
 }
