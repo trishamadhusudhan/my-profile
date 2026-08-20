@@ -1,0 +1,81 @@
+/* src/components/Navbar/Navbar.css */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--primary);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding: 20px 5%;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+color: var(--white);
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 30px;
+}
+
+.nav-links li a {
+color: var(--white);
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+color: var(--accent);
+}
+
+.nav-links li a.active {
+color: var(--accent);
+font-weight: bold;
+border-bottom: 2px solid var(--accent);
+}
+
+/* === MOBILE NAVIGATION === */
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+color: #fff;
+font-size: 30px;
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.menu-toggle {
+display: block;
+}
+.nav-links {
+display: none;
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background: #1B4F72;
+flex-direction: column;
+text-align: center;
+padding: 20px 0;
+gap: 20px;
+}
+.nav-links.open {
+display: flex;
+}
+}

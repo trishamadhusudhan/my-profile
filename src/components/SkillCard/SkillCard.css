@@ -1,0 +1,49 @@
+/* src/components/SkillCard/SkillCard.css */
+
+.skill-card {
+background: var(--light);
+border: 2px solid var(--primary);
+border-radius: 12px;
+padding: 30px 20px;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.skill-icon {
+font-size: 2.5rem;
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.skill-name {
+margin: 0 0 0.25rem;
+font-size: 1.2rem;
+font-weight: bold;
+color: var(--text);
+}
+
+.skill-level {
+font-size: 0.9rem;
+color: var(--accent);
+margin: 0 0 1rem;
+font-weight: 600;
+}
+
+.skill-bar {
+background: #E5E7EB;
+border-radius: 9999px;
+height: 8px;
+width: 100%;
+}
+
+.skill-fill {
+background: var(--primary);
+border-radius: 9999px;
+height: 100%;
+transition: width 1s ease-in-out;
+}

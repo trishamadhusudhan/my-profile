@@ -1,0 +1,375 @@
+/*src/index.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #1B4F72;
+    --accent: #F18F01;
+    --text: #2C3E50;
+    --light: #F4F6F8;
+    --white: #FFFFFF;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* === SECTION STYLES === */
+section{
+    padding: 60px 0;
+}
+section h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+/* 3. Dark Mode Global Overrides */
+body[data-theme="dark"] {
+    background: #121212;
+    color: #f5f5f5;
+}
+/* Header */
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .navbar {
+    background: #1a1a1a;
+}
+
+
+/* Navigation Links */
+body[data-theme="dark"] .nav-links a {
+    color: #ffffff;
+}
+
+
+body[data-theme="dark"] .nav-links a:hover,
+body[data-theme="dark"] .nav-links a.active {
+    color: #F18F01;
+}
+
+
+/* Logo */
+body[data-theme="dark"] .logo {
+    color: #ffffff;
+}
+
+
+/* Hero */
+body[data-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+
+/* Highlight */
+body[data-theme="dark"] .highlight {
+    color: #F18F01;
+}
+
+
+/* About */
+body[data-theme="dark"] .about-section {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+
+/* Skills */
+body[data-theme="dark"] .skills-section {
+    background: #181818;
+}
+
+
+body[data-theme="dark"] .skill-item {
+    background: #242424;
+    color: #ffffff;
+    border-color: #F18F01;
+}
+
+/* GitHub Stats Dark */
+body[data-theme="dark"] .github-stats {
+    background: #1f2937;
+    color: #ffffff;
+    border: 1px solid #374151;
+}
+
+/* Skill Cards Dark */
+body[data-theme="dark"] .skill-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #ffffff;
+}
+body[data-theme="dark"] .skill-name { color: #ffffff; }
+body[data-theme="dark"] .skill-level { color: #F18F01; }
+
+/* Projects */
+body[data-theme="dark"] .projects-section {
+    background: #121212;
+}
+
+
+body[data-theme="dark"] .project-card {
+    background: #242424;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(255,255,255,0.08);
+}
+
+
+body[data-theme="dark"] .project-card h3,
+body[data-theme="dark"] .project-card p {
+    color: #ffffff;
+}
+
+
+/* Tags */
+body[data-theme="dark"] .tag {
+    background: #F18F01;
+    color: #ffffff;
+}
+
+
+/* Contact */
+body[data-theme="dark"] .contact-section {
+    background: #181818;
+}
+
+
+/* Form */
+body[data-theme="dark"] input,
+body[data-theme="dark"] textarea {
+    background: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+
+body[data-theme="dark"] input::placeholder,
+body[data-theme="dark"] textarea::placeholder {
+    color: #bdbdbd;
+}
+
+
+body[data-theme="dark"] label {
+    color: #ffffff;
+}
+
+
+/* Buttons */
+body[data-theme="dark"] .btn-primary {
+    background: #F18F01;
+    color: #ffffff;
+}
+
+
+body[data-theme="dark"] .btn-secondary {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+
+body[data-theme="dark"] .btn-secondary:hover {
+    background: #ffffff;
+    color: #121212;
+}
+
+
+/* Footer */
+body[data-theme="dark"] .site-footer {
+    background: #1a1a1a;
+    color: #cccccc;
+}
+
+
+body[data-theme="dark"] .site-footer a {
+    color: #ffffff;
+}
+
+
+body[data-theme="dark"] .site-footer a:hover {
+    color: #F18F01;
+}
+
+
+/* Theme Button */
+body[data-theme="dark"] .theme-toggle {
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+html, body, #root {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.6;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-content {
+    flex: 1;
+}
+
+.container {
+    width: min(1200px, 100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* BUTTON */
+
+.btn {
+display: inline-block;
+padding: 12px 28px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+border: 2px solid transparent;
+transition: all 0.3s ease;
+}
+
+.btn-primary {
+background: var(--accent);
+color: var(--white);
+}
+
+.btn-primary:hover {
+background: transparent;
+color: var(--accent);
+border-color: var(--accent);
+}
+
+.btn-secondary {
+background: transparent;
+color: var(--white);
+border-color: var(--white);
+}
+
+.btn-secondary:hover {
+background: var(--white);
+color: var(--primary);
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.filter-btn:last-child {
+  margin-right: 0;
+}
+
+.projects-header {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.projects-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    align-items: center;
+    text-align: center;
+  }
+}
+.about-section {
+  padding: 40px 0;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--accent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-copy h1 {
+  font-size: 2.75rem;
+  margin-bottom: 20px;
+}
+
+.about-copy p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+@media (max-width: 860px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 25px;
+  }
+}
