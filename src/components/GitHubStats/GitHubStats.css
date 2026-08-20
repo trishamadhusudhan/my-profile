@@ -1,8 +1,18 @@
-.github-stats { 
-    display: flex; 
-    gap: 20px; 
-    align-items: center; 
-    background: white; 
-    padding: 20px; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.github-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--accent);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stats-info h3 {
+    color: var(--text);
+}
+
+.stats-info p {
+    color: var(--text);
+}
