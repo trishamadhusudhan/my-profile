@@ -1,7 +1,6 @@
-/* === FOOTER === */
-.site-footer{
-    background: var(--primary);
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 40px 5%;
+.site-footer {
+  background: var(--text);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 40px 5%;
 }
