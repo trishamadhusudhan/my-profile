@@ -1,5 +1,3 @@
-export const categories = ['all', 'web'];
-
 export const projectsData = [
   {
     id: 1,
@@ -16,7 +14,6 @@ export const projectsData = [
       'Supabase',
       'PostgreSQL'
     ],
-    category: 'web',
     featured: true,
     liveUrl: 'https://pawtrace-2aa9a.web.app',
   }
