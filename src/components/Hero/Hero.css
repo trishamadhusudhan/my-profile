@@ -1,12 +1,9 @@
-/* STREAMING_CHUNK:Styling the main hero section... */
 .hero-section {
   margin-top: 0;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary), #2E86AB);
+  background: linear-gradient(135deg, var(--primary), #292929);
   color: var(--white);
   padding: 100px 5% 80px;
-
-  /* Modern flexbox touches to center everything vertically */
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -17,21 +14,25 @@
 }
 
 .hero-content {
-max-width: 800px;
+  max-width: 800px;
 }
 
-/* STREAMING_CHUNK:Defining keyframe animations... /
-/ Animations */
 @keyframes fadeInUp {
-from { opacity: 0; transform: translateY(30px); }
-to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* STREAMING_CHUNK:Applying animations to text elements... */
 .hero-section h1 {
-font-size: 3.5rem;
-margin-bottom: 20px;
-animation: fadeInUp 0.8s ease 0.2s both;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 @media (min-width: 900px) {
@@ -41,35 +42,30 @@ animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 .highlight {
-color: var(--accent);
+  color: var(--accent);
 }
 
 .tagline {
-font-size: 1.25rem;
-margin-bottom: 40px;
-animation: fadeInUp 0.8s ease 0.4s both;
-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease 0.4s both;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-/* STREAMING_CHUNK:Applying animations to buttons and setting layout... */
 .hero-buttons {
-display: flex;
-gap: 20px;
-justify-content: center;
-animation: fadeInUp 0.8s ease 0.6s both;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease 0.6s both;
 }
 
-/* STREAMING_CHUNK:Adding responsive styles for mobile devices... /
-/ Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
-.hero-section h1 {
-font-size: 2.5rem;
-}
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
 
-.hero-buttons {
+  .hero-buttons {
     flex-direction: column;
     gap: 15px;
-}
-
-
+  }
 }
