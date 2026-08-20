@@ -5,7 +5,7 @@ function AboutSection() {
     <section id='about' className='about-section'>
       <div className='about-wrapper container'>
         <div className='about-image'>
-          <img src='/photo.jpeg' alt='Trisha' />
+          <img src={`${import.meta.env.BASE_URL}photo.jpeg`} alt="Trisha" />
         </div>
         <div className='about-copy'>
           <h1>About Me</h1>
