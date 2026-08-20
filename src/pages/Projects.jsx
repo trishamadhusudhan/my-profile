@@ -1,4 +1,4 @@
-import { projectsData } from '../data/projects';
+import { projectsData, } from '../data/projects';
 import ProjectGrid from '../components/ProjectGrid/ProjectGrid';
 
 function Projects() {

@@ -1,11 +1,12 @@
 import './AboutSection.css';
+import photo from '../../assets/photo.jpeg';
 
 function AboutSection() {
   return (
     <section id='about' className='about-section'>
       <div className='about-wrapper container'>
         <div className='about-image'>
-          <img src={`${import.meta.env.BASE_URL}photo.jpeg`} alt="Trisha" />
+          <img src={photo} alt="Trisha" />
         </div>
         <div className='about-copy'>
           <h1>About Me</h1>
